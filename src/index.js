@@ -11,8 +11,6 @@ app.get('/', (req,res)=>{
     res.send("olha la rapa");
 });
 
-require('./controllers/authController')(app);
-
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 
 app.listen(3000);
